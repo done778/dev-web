@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue.js로 버튼 만들고 동작시키기</title>
+    <script src="vue.js"></script>
+
+</head>
+<body>
+    <div id="buttontest">
+        <p>여기는 <b>안</b> 입니다.<p>
+        <button v-on:click="move">밖으로 나가기</button>
+    </div>
+    
+    <script>
+
+        var example1 = new Vue({
+            el: "#buttontest",
+            methods: {
+                move: function () {
+                    location.href = "button1.html";
+                }
+            }
+        })
+
+    </script>
+
+</body>
+</html>
